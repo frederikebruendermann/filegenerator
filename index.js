@@ -6,7 +6,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 })
 
-rl.question('Hello, how are you?', answer => {
-  console.log(answer)
+rl.question('Which function and file would you like to create?', answer => {
+  writeFile(answer)
   rl.close()
 })
